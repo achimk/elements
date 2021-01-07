@@ -10,6 +10,16 @@
 		27B69EAF25A7520E0028CCAD /* Elements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B69EA525A7520E0028CCAD /* Elements.framework */; };
 		27B69EB425A7520E0028CCAD /* ElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EB325A7520E0028CCAD /* ElementsTests.swift */; };
 		27B69EB625A7520E0028CCAD /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B69EA825A7520E0028CCAD /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */; };
+		27B69ED025A754A60028CCAD /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC625A754A60028CCAD /* Disk+Errors.swift */; };
+		27B69ED125A754A60028CCAD /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC725A754A60028CCAD /* Disk+Data.swift */; };
+		27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC825A754A60028CCAD /* Disk+Helpers.swift */; };
+		27B69ED325A754A60028CCAD /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC925A754A60028CCAD /* Disk+[Data].swift */; };
+		27B69ED425A754A60028CCAD /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECA25A754A60028CCAD /* Disk+UIImage.swift */; };
+		27B69ED525A754A60028CCAD /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECB25A754A60028CCAD /* Disk+VolumeInformation.swift */; };
+		27B69ED625A754A60028CCAD /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECC25A754A60028CCAD /* Disk.swift */; };
+		27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECD25A754A60028CCAD /* Disk+Codable.swift */; };
+		27B69ED825A754A60028CCAD /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECE25A754A60028CCAD /* Disk+InternalHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		27B69EAE25A7520E0028CCAD /* ElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B69EB325A7520E0028CCAD /* ElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsTests.swift; sourceTree = "<group>"; };
 		27B69EB525A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+[UIImage].swift"; sourceTree = "<group>"; };
+		27B69EC625A754A60028CCAD /* Disk+Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Errors.swift"; sourceTree = "<group>"; };
+		27B69EC725A754A60028CCAD /* Disk+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Data.swift"; sourceTree = "<group>"; };
+		27B69EC825A754A60028CCAD /* Disk+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Helpers.swift"; sourceTree = "<group>"; };
+		27B69EC925A754A60028CCAD /* Disk+[Data].swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+[Data].swift"; sourceTree = "<group>"; };
+		27B69ECA25A754A60028CCAD /* Disk+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+UIImage.swift"; sourceTree = "<group>"; };
+		27B69ECB25A754A60028CCAD /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
+		27B69ECC25A754A60028CCAD /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
+		27B69ECD25A754A60028CCAD /* Disk+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Codable.swift"; sourceTree = "<group>"; };
+		27B69ECE25A754A60028CCAD /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,9 @@
 		27B69EA725A7520E0028CCAD /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				27B69EC325A752F00028CCAD /* Utilities */,
+				27B69EC225A752EA0028CCAD /* Core */,
+				27B69EC125A752E30028CCAD /* UI */,
 				27B69EA825A7520E0028CCAD /* Elements.h */,
 				27B69EA925A7520E0028CCAD /* Info.plist */,
 			);
@@ -84,6 +107,45 @@
 				27B69EB525A7520E0028CCAD /* Info.plist */,
 			);
 			path = ElementsTests;
+			sourceTree = "<group>";
+		};
+		27B69EC125A752E30028CCAD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		27B69EC225A752EA0028CCAD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		27B69EC325A752F00028CCAD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				27B69EC425A754900028CCAD /* Disk-0.6.4 */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		27B69EC425A754900028CCAD /* Disk-0.6.4 */ = {
+			isa = PBXGroup;
+			children = (
+				27B69ECC25A754A60028CCAD /* Disk.swift */,
+				27B69EC925A754A60028CCAD /* Disk+[Data].swift */,
+				27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */,
+				27B69ECD25A754A60028CCAD /* Disk+Codable.swift */,
+				27B69EC725A754A60028CCAD /* Disk+Data.swift */,
+				27B69EC625A754A60028CCAD /* Disk+Errors.swift */,
+				27B69EC825A754A60028CCAD /* Disk+Helpers.swift */,
+				27B69ECE25A754A60028CCAD /* Disk+InternalHelpers.swift */,
+				27B69ECA25A754A60028CCAD /* Disk+UIImage.swift */,
+				27B69ECB25A754A60028CCAD /* Disk+VolumeInformation.swift */,
+			);
+			path = "Disk-0.6.4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +209,7 @@
 				TargetAttributes = {
 					27B69EA425A7520E0028CCAD = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					27B69EAD25A7520E0028CCAD = {
 						CreatedOnToolsVersion = 12.1;
@@ -194,6 +257,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B69ED625A754A60028CCAD /* Disk.swift in Sources */,
+				27B69ED825A754A60028CCAD /* Disk+InternalHelpers.swift in Sources */,
+				27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */,
+				27B69ED025A754A60028CCAD /* Disk+Errors.swift in Sources */,
+				27B69ED425A754A60028CCAD /* Disk+UIImage.swift in Sources */,
+				27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */,
+				27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */,
+				27B69ED125A754A60028CCAD /* Disk+Data.swift in Sources */,
+				27B69ED325A754A60028CCAD /* Disk+[Data].swift in Sources */,
+				27B69ED525A754A60028CCAD /* Disk+VolumeInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +414,7 @@
 		27B69EBA25A7520E0028CCAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = joachim.kret.Elements;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +439,7 @@
 		27B69EBB25A7520E0028CCAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +463,7 @@
 		27B69EBD25A7520E0028CCAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ElementsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +481,7 @@
 		27B69EBE25A7520E0028CCAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ElementsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
