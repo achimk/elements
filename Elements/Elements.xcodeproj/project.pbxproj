@@ -38,6 +38,10 @@
 		27B69F1225A757B30028CCAD /* PairedByStrideIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F1125A757B30028CCAD /* PairedByStrideIteratorTests.swift */; };
 		27B69F1B25A758F20028CCAD /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F1925A758F20028CCAD /* Once.swift */; };
 		27B69F1C25A758F20028CCAD /* Boxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F1A25A758F20028CCAD /* Boxes.swift */; };
+		27B69F2025A75AD60028CCAD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F1F25A75AD60028CCAD /* UIView+Extensions.swift */; };
+		27B69F2425A75BD30028CCAD /* UIResponder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F2325A75BD30028CCAD /* UIResponder+Extensions.swift */; };
+		27B69F2C25A75CFE0028CCAD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F2B25A75CFE0028CCAD /* String+Extensions.swift */; };
+		27B69F3025A75D180028CCAD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69F2F25A75D180028CCAD /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		27B69F1125A757B30028CCAD /* PairedByStrideIteratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedByStrideIteratorTests.swift; sourceTree = "<group>"; };
 		27B69F1925A758F20028CCAD /* Once.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
 		27B69F1A25A758F20028CCAD /* Boxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boxes.swift; sourceTree = "<group>"; };
+		27B69F1F25A75AD60028CCAD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		27B69F2325A75BD30028CCAD /* UIResponder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extensions.swift"; sourceTree = "<group>"; };
+		27B69F2B25A75CFE0028CCAD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		27B69F2F25A75D180028CCAD /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,8 @@
 		27B69EC125A752E30028CCAD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				27B69F1F25A75AD60028CCAD /* UIView+Extensions.swift */,
+				27B69F2325A75BD30028CCAD /* UIResponder+Extensions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -229,6 +239,8 @@
 				27B69F0525A757180028CCAD /* Collection+Safe.swift */,
 				27B69F0325A757180028CCAD /* Optional+Present.swift */,
 				27B69F0425A757180028CCAD /* Optional+Unwrap.swift */,
+				27B69F2B25A75CFE0028CCAD /* String+Extensions.swift */,
+				27B69F2F25A75D180028CCAD /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,6 +382,7 @@
 				27B69ED625A754A60028CCAD /* Disk.swift in Sources */,
 				27B69EEB25A7553C0028CCAD /* Pair.swift in Sources */,
 				27B69F1B25A758F20028CCAD /* Once.swift in Sources */,
+				27B69F3025A75D180028CCAD /* Date+Extensions.swift in Sources */,
 				27B69F0725A757190028CCAD /* Optional+Unwrap.swift in Sources */,
 				27B69ED825A754A60028CCAD /* Disk+InternalHelpers.swift in Sources */,
 				27B69F1C25A758F20028CCAD /* Boxes.swift in Sources */,
@@ -377,9 +390,12 @@
 				27B69ED025A754A60028CCAD /* Disk+Errors.swift in Sources */,
 				27B69EEA25A7553C0028CCAD /* ValidatedResult.swift in Sources */,
 				27B69EE725A7553C0028CCAD /* ActivityState.swift in Sources */,
+				27B69F2425A75BD30028CCAD /* UIResponder+Extensions.swift in Sources */,
 				27B69ED425A754A60028CCAD /* Disk+UIImage.swift in Sources */,
 				27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */,
 				27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */,
+				27B69F2025A75AD60028CCAD /* UIView+Extensions.swift in Sources */,
+				27B69F2C25A75CFE0028CCAD /* String+Extensions.swift in Sources */,
 				27B69F0825A757190028CCAD /* Collection+Safe.swift in Sources */,
 				27B69F0D25A7576B0028CCAD /* PairedByStrideIterator.swift in Sources */,
 				27B69ED125A754A60028CCAD /* Disk+Data.swift in Sources */,
