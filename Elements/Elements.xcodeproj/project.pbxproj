@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2755B17B25A760D600DE5CBB /* UINavigationBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755B17A25A760D600DE5CBB /* UINavigationBar+Extensions.swift */; };
+		2755B17F25A7610700DE5CBB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755B17E25A7610700DE5CBB /* UIViewController+Extensions.swift */; };
+		2755B18325A7623000DE5CBB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755B18225A7623000DE5CBB /* UIColor+Extensions.swift */; };
 		27B69EAF25A7520E0028CCAD /* Elements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B69EA525A7520E0028CCAD /* Elements.framework */; };
 		27B69EB625A7520E0028CCAD /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B69EA825A7520E0028CCAD /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2755B17A25A760D600DE5CBB /* UINavigationBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extensions.swift"; sourceTree = "<group>"; };
+		2755B17E25A7610700DE5CBB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2755B18225A7623000DE5CBB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		27B69EA525A7520E0028CCAD /* Elements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B69EA825A7520E0028CCAD /* Elements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
 		27B69EA925A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +120,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2755B18625A7627900DE5CBB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2755B18225A7623000DE5CBB /* UIColor+Extensions.swift */,
+				2755B17A25A760D600DE5CBB /* UINavigationBar+Extensions.swift */,
+				27B69F2325A75BD30028CCAD /* UIResponder+Extensions.swift */,
+				27B69F1F25A75AD60028CCAD /* UIView+Extensions.swift */,
+				2755B17E25A7610700DE5CBB /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		27B69E9B25A7520E0028CCAD = {
 			isa = PBXGroup;
 			children = (
@@ -156,8 +174,7 @@
 		27B69EC125A752E30028CCAD /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				27B69F1F25A75AD60028CCAD /* UIView+Extensions.swift */,
-				27B69F2325A75BD30028CCAD /* UIResponder+Extensions.swift */,
+				2755B18625A7627900DE5CBB /* Extensions */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -384,6 +401,8 @@
 				27B69F1B25A758F20028CCAD /* Once.swift in Sources */,
 				27B69F3025A75D180028CCAD /* Date+Extensions.swift in Sources */,
 				27B69F0725A757190028CCAD /* Optional+Unwrap.swift in Sources */,
+				2755B17B25A760D600DE5CBB /* UINavigationBar+Extensions.swift in Sources */,
+				2755B18325A7623000DE5CBB /* UIColor+Extensions.swift in Sources */,
 				27B69ED825A754A60028CCAD /* Disk+InternalHelpers.swift in Sources */,
 				27B69F1C25A758F20028CCAD /* Boxes.swift in Sources */,
 				27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */,
@@ -402,6 +421,7 @@
 				27B69EE825A7553C0028CCAD /* Either.swift in Sources */,
 				27B69F0625A757190028CCAD /* Optional+Present.swift in Sources */,
 				27B69ED325A754A60028CCAD /* Disk+[Data].swift in Sources */,
+				2755B17F25A7610700DE5CBB /* UIViewController+Extensions.swift in Sources */,
 				27B69ED525A754A60028CCAD /* Disk+VolumeInformation.swift in Sources */,
 				27B69EE625A7553C0028CCAD /* Result.swift in Sources */,
 				27B69EE925A7553C0028CCAD /* Change.swift in Sources */,
