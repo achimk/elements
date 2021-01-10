@@ -206,11 +206,27 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		27B69E9B25A7520E0028CCAD = {
+		27A2D47C25AB436000DEF483 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				27B69EA725A7520E0028CCAD /* Elements */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		27A2D47D25AB436C00DEF483 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
 				27B69EB225A7520E0028CCAD /* ElementsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		27B69E9B25A7520E0028CCAD = {
+			isa = PBXGroup;
+			children = (
+				27A2D47C25AB436000DEF483 /* Source */,
+				27A2D47D25AB436C00DEF483 /* Tests */,
 				27B69EA625A7520E0028CCAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -676,7 +692,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Elements/Info.plist;
+				INFOPLIST_FILE = Source/Elements/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,7 +718,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Elements/Info.plist;
+				INFOPLIST_FILE = Source/Elements/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -723,7 +739,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ElementsTests/Info.plist;
+				INFOPLIST_FILE = Tests/ElementsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -741,7 +757,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ElementsTests/Info.plist;
+				INFOPLIST_FILE = Tests/ElementsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
