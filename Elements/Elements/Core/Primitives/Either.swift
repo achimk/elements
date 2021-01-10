@@ -66,7 +66,7 @@ extension Either {
 
 extension Either where Left: Swift.Error {
     
-    public func asResult() -> Result<Right, Left> {
+    public func toResult() -> Result<Right, Left> {
         
         return analyze(
             ifLeft: Result<Right, Left>.failure,

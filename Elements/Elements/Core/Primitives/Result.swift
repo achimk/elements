@@ -67,7 +67,7 @@ extension Result {
 
 extension Result {
     
-    public func asEither() -> Either<Failure, Success> {
+    public func toEither() -> Either<Failure, Success> {
         
         return analyze(
             ifSuccess: Either<Failure, Success>.right,

@@ -21,6 +21,8 @@
 		27A2D46B25AB3D7800DEF483 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D46325AB3D7800DEF483 /* NibOwnerLoadable.swift */; };
 		27A2D46C25AB3D7800DEF483 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D46525AB3D7800DEF483 /* StoryboardSceneBased.swift */; };
 		27A2D46D25AB3D7800DEF483 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D46625AB3D7800DEF483 /* StoryboardBased.swift */; };
+		27A2D47325AB3F8300DEF483 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */; };
+		27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */; };
 		27B69EAF25A7520E0028CCAD /* Elements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B69EA525A7520E0028CCAD /* Elements.framework */; };
 		27B69EB625A7520E0028CCAD /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B69EA825A7520E0028CCAD /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */; };
@@ -83,6 +85,8 @@
 		27A2D46325AB3D7800DEF483 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		27A2D46525AB3D7800DEF483 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
 		27A2D46625AB3D7800DEF483 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
+		27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		27B69EA525A7520E0028CCAD /* Elements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B69EA825A7520E0028CCAD /* Elements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
 		27B69EA925A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -331,6 +335,8 @@
 				27B69F0425A757180028CCAD /* Optional+Unwrap.swift */,
 				27B69F2B25A75CFE0028CCAD /* String+Extensions.swift */,
 				27B69F2F25A75D180028CCAD /* Date+Extensions.swift */,
+				27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */,
+				27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -492,11 +498,13 @@
 				27B69ED425A754A60028CCAD /* Disk+UIImage.swift in Sources */,
 				27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */,
 				27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */,
+				27A2D47325AB3F8300DEF483 /* TimeZone+Extensions.swift in Sources */,
 				27B69F2025A75AD60028CCAD /* UIView+Extensions.swift in Sources */,
 				27A2D45625AB3A9E00DEF483 /* NonEmpty.swift in Sources */,
 				27B69F2C25A75CFE0028CCAD /* String+Extensions.swift in Sources */,
 				27A2D46A25AB3D7800DEF483 /* NibLoadable.swift in Sources */,
 				27B69F0825A757190028CCAD /* Collection+Safe.swift in Sources */,
+				27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */,
 				27B69F0D25A7576B0028CCAD /* PairedByStrideIterator.swift in Sources */,
 				27B69ED125A754A60028CCAD /* Disk+Data.swift in Sources */,
 				27B69EE825A7553C0028CCAD /* Either.swift in Sources */,
@@ -678,6 +686,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = joachim.kret.Elements;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -703,6 +712,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = joachim.kret.Elements;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
