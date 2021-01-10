@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272E741225AA1A2400934F4F /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272E741125AA1A2400934F4F /* RingBuffer.swift */; };
+		272E741925AB305200934F4F /* RingBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272E741825AB305200934F4F /* RingBufferTests.swift */; };
 		2755B17B25A760D600DE5CBB /* UINavigationBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755B17A25A760D600DE5CBB /* UINavigationBar+Extensions.swift */; };
 		2755B17F25A7610700DE5CBB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755B17E25A7610700DE5CBB /* UIViewController+Extensions.swift */; };
 		2755B18325A7623000DE5CBB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755B18225A7623000DE5CBB /* UIColor+Extensions.swift */; };
+		27A2D45625AB3A9E00DEF483 /* NonEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D45525AB3A9E00DEF483 /* NonEmpty.swift */; };
+		27A2D45A25AB3B9100DEF483 /* NonEmptyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D45925AB3B9100DEF483 /* NonEmptyTests.swift */; };
 		27B69EAF25A7520E0028CCAD /* Elements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B69EA525A7520E0028CCAD /* Elements.framework */; };
 		27B69EB625A7520E0028CCAD /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B69EA825A7520E0028CCAD /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */; };
@@ -58,9 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272E741125AA1A2400934F4F /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		272E741825AB305200934F4F /* RingBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBufferTests.swift; sourceTree = "<group>"; };
 		2755B17A25A760D600DE5CBB /* UINavigationBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extensions.swift"; sourceTree = "<group>"; };
 		2755B17E25A7610700DE5CBB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		2755B18225A7623000DE5CBB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		27A2D45525AB3A9E00DEF483 /* NonEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmpty.swift; sourceTree = "<group>"; };
+		27A2D45925AB3B9100DEF483 /* NonEmptyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyTests.swift; sourceTree = "<group>"; };
 		27B69EA525A7520E0028CCAD /* Elements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B69EA825A7520E0028CCAD /* Elements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
 		27B69EA925A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +128,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272E741025AA1A0700934F4F /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				272E741125AA1A2400934F4F /* RingBuffer.swift */,
+				27A2D45525AB3A9E00DEF483 /* NonEmpty.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		272E741725AB303D00934F4F /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				272E741825AB305200934F4F /* RingBufferTests.swift */,
+				27A2D45925AB3B9100DEF483 /* NonEmptyTests.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		2755B18625A7627900DE5CBB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +208,7 @@
 		27B69EC225A752EA0028CCAD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				272E741025AA1A0700934F4F /* Collections */,
 				27B69F0225A757020028CCAD /* Extensions */,
 				27B69F0B25A757530028CCAD /* Iterators */,
 				27B69F1825A758DC0028CCAD /* Others */,
@@ -231,6 +258,7 @@
 		27B69EEE25A7555C0028CCAD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				272E741725AB303D00934F4F /* Collections */,
 				27B69F1025A757A00028CCAD /* Iterators */,
 				27B69EEF25A755630028CCAD /* Primitives */,
 			);
@@ -407,6 +435,7 @@
 				27B69F1C25A758F20028CCAD /* Boxes.swift in Sources */,
 				27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */,
 				27B69ED025A754A60028CCAD /* Disk+Errors.swift in Sources */,
+				272E741225AA1A2400934F4F /* RingBuffer.swift in Sources */,
 				27B69EEA25A7553C0028CCAD /* ValidatedResult.swift in Sources */,
 				27B69EE725A7553C0028CCAD /* ActivityState.swift in Sources */,
 				27B69F2425A75BD30028CCAD /* UIResponder+Extensions.swift in Sources */,
@@ -414,6 +443,7 @@
 				27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */,
 				27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */,
 				27B69F2025A75AD60028CCAD /* UIView+Extensions.swift in Sources */,
+				27A2D45625AB3A9E00DEF483 /* NonEmpty.swift in Sources */,
 				27B69F2C25A75CFE0028CCAD /* String+Extensions.swift in Sources */,
 				27B69F0825A757190028CCAD /* Collection+Safe.swift in Sources */,
 				27B69F0D25A7576B0028CCAD /* PairedByStrideIterator.swift in Sources */,
@@ -437,7 +467,9 @@
 				27B69EF825A755710028CCAD /* ChangeTests.swift in Sources */,
 				27B69EF725A755710028CCAD /* ActivityStateTests.swift in Sources */,
 				27B69EF925A755710028CCAD /* PairTests.swift in Sources */,
+				272E741925AB305200934F4F /* RingBufferTests.swift in Sources */,
 				27B69F1225A757B30028CCAD /* PairedByStrideIteratorTests.swift in Sources */,
+				27A2D45A25AB3B9100DEF483 /* NonEmptyTests.swift in Sources */,
 				27B69EFB25A755710028CCAD /* ResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
