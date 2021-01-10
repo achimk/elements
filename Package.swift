@@ -24,11 +24,15 @@ let package = Package(
         .target(
             name: "Elements",
             dependencies: [],
-            path: "Sources"),
+            path: "Sources",
+            exclude: ["Elements/Info.plist"]
+        ),
         .testTarget(
             name: "ElementsTests",
             dependencies: ["Elements"],
-            path: "Tests"),
+            path: "Tests",
+            exclude: ["ElementsTests/Info.plist"]
+        ),
     ],
     swiftLanguageVersions: [.v5]
 )
