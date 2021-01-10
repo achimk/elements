@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 extension UIResponder {
@@ -13,3 +14,4 @@ extension UIResponder {
         UIResponder._currentFirstResponder = self
     }
 }
+#endif

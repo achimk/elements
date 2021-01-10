@@ -1,3 +1,5 @@
+import Foundation
+
 extension Decimal {
     
     public func round(scale: Int, mode: RoundingMode) -> Decimal {

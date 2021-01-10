@@ -23,11 +23,12 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 typealias SWColor = UIColor
-#else
+#elseif os(macOS)
 import Cocoa
 typealias SWColor = NSColor
 #endif
 
+#if os(iOS) || os(tvOS) || os(macOS)
 private extension Int {
     func duplicate4bits() -> Int {
         return (self << 4) + self
@@ -123,8 +124,9 @@ extension SWColor {
 
 extension SWColor {
     
-    static func hex(_ hex: Int, alpha: Float = 1.0, otherwise: UIColor = .red) -> UIColor {
+    static func hex(_ hex: Int, alpha: Float = 1.0, otherwise: SWColor = .red) -> SWColor {
 
         return SWColor.init(hex: hex, alpha: alpha) ?? otherwise
     }
 }
+#endif

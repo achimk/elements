@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 extension UINavigationBar {
@@ -11,3 +12,4 @@ extension UINavigationBar {
     }
     
 }
+#endif
