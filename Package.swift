@@ -25,13 +25,13 @@ let package = Package(
             name: "Elements",
             dependencies: [],
             path: "Sources",
-            exclude: ["Elements/Info.plist"]
+            exclude: ["Info.plist"]
         ),
         .testTarget(
             name: "ElementsTests",
             dependencies: ["Elements"],
             path: "Tests",
-            exclude: ["ElementsTests/Info.plist"]
+            exclude: ["Info.plist"]
         ),
     ],
     swiftLanguageVersions: [.v5]

@@ -25,16 +25,6 @@
 		27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */; };
 		27B69EAF25A7520E0028CCAD /* Elements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B69EA525A7520E0028CCAD /* Elements.framework */; };
 		27B69EB625A7520E0028CCAD /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B69EA825A7520E0028CCAD /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */; };
-		27B69ED025A754A60028CCAD /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC625A754A60028CCAD /* Disk+Errors.swift */; };
-		27B69ED125A754A60028CCAD /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC725A754A60028CCAD /* Disk+Data.swift */; };
-		27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC825A754A60028CCAD /* Disk+Helpers.swift */; };
-		27B69ED325A754A60028CCAD /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EC925A754A60028CCAD /* Disk+[Data].swift */; };
-		27B69ED425A754A60028CCAD /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECA25A754A60028CCAD /* Disk+UIImage.swift */; };
-		27B69ED525A754A60028CCAD /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECB25A754A60028CCAD /* Disk+VolumeInformation.swift */; };
-		27B69ED625A754A60028CCAD /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECC25A754A60028CCAD /* Disk.swift */; };
-		27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECD25A754A60028CCAD /* Disk+Codable.swift */; };
-		27B69ED825A754A60028CCAD /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69ECE25A754A60028CCAD /* Disk+InternalHelpers.swift */; };
 		27B69EE625A7553C0028CCAD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EE025A7553C0028CCAD /* Result.swift */; };
 		27B69EE725A7553C0028CCAD /* ActivityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EE125A7553C0028CCAD /* ActivityState.swift */; };
 		27B69EE825A7553C0028CCAD /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EE225A7553C0028CCAD /* Either.swift */; };
@@ -92,16 +82,6 @@
 		27B69EA925A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B69EAE25A7520E0028CCAD /* ElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B69EB525A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+[UIImage].swift"; sourceTree = "<group>"; };
-		27B69EC625A754A60028CCAD /* Disk+Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Errors.swift"; sourceTree = "<group>"; };
-		27B69EC725A754A60028CCAD /* Disk+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Data.swift"; sourceTree = "<group>"; };
-		27B69EC825A754A60028CCAD /* Disk+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Helpers.swift"; sourceTree = "<group>"; };
-		27B69EC925A754A60028CCAD /* Disk+[Data].swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+[Data].swift"; sourceTree = "<group>"; };
-		27B69ECA25A754A60028CCAD /* Disk+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+UIImage.swift"; sourceTree = "<group>"; };
-		27B69ECB25A754A60028CCAD /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
-		27B69ECC25A754A60028CCAD /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
-		27B69ECD25A754A60028CCAD /* Disk+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+Codable.swift"; sourceTree = "<group>"; };
-		27B69ECE25A754A60028CCAD /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
 		27B69EE025A7553C0028CCAD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		27B69EE125A7553C0028CCAD /* ActivityState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityState.swift; sourceTree = "<group>"; };
 		27B69EE225A7553C0028CCAD /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
@@ -176,13 +156,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		27A2D45D25AB3D6100DEF483 /* Reusable-4.1.1 */ = {
+		27A2D45D25AB3D6100DEF483 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
 				27A2D46425AB3D7800DEF483 /* Storyboard */,
 				27A2D45E25AB3D7800DEF483 /* View */,
 			);
-			path = "Reusable-4.1.1";
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		27A2D45E25AB3D7800DEF483 /* View */ = {
@@ -209,7 +189,10 @@
 		27A2D47C25AB436000DEF483 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				27B69EA725A7520E0028CCAD /* Elements */,
+				27B69EC225A752EA0028CCAD /* Core */,
+				27B69EC125A752E30028CCAD /* UI */,
+				27B69EA825A7520E0028CCAD /* Elements.h */,
+				27B69EA925A7520E0028CCAD /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -217,7 +200,8 @@
 		27A2D47D25AB436C00DEF483 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				27B69EB225A7520E0028CCAD /* ElementsTests */,
+				27B69EEE25A7555C0028CCAD /* Core */,
+				27B69EB525A7520E0028CCAD /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -240,30 +224,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27B69EA725A7520E0028CCAD /* Elements */ = {
-			isa = PBXGroup;
-			children = (
-				27B69EC325A752F00028CCAD /* Utilities */,
-				27B69EC225A752EA0028CCAD /* Core */,
-				27B69EC125A752E30028CCAD /* UI */,
-				27B69EA825A7520E0028CCAD /* Elements.h */,
-				27B69EA925A7520E0028CCAD /* Info.plist */,
-			);
-			path = Elements;
-			sourceTree = "<group>";
-		};
-		27B69EB225A7520E0028CCAD /* ElementsTests */ = {
-			isa = PBXGroup;
-			children = (
-				27B69EEE25A7555C0028CCAD /* Core */,
-				27B69EB525A7520E0028CCAD /* Info.plist */,
-			);
-			path = ElementsTests;
-			sourceTree = "<group>";
-		};
 		27B69EC125A752E30028CCAD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				27A2D45D25AB3D6100DEF483 /* Reusable */,
 				2755B18625A7627900DE5CBB /* Extensions */,
 			);
 			path = UI;
@@ -279,32 +243,6 @@
 				27B69EDF25A755200028CCAD /* Primitives */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		27B69EC325A752F00028CCAD /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				27A2D45D25AB3D6100DEF483 /* Reusable-4.1.1 */,
-				27B69EC425A754900028CCAD /* Disk-0.6.4 */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		27B69EC425A754900028CCAD /* Disk-0.6.4 */ = {
-			isa = PBXGroup;
-			children = (
-				27B69ECC25A754A60028CCAD /* Disk.swift */,
-				27B69EC925A754A60028CCAD /* Disk+[Data].swift */,
-				27B69EC525A754A60028CCAD /* Disk+[UIImage].swift */,
-				27B69ECD25A754A60028CCAD /* Disk+Codable.swift */,
-				27B69EC725A754A60028CCAD /* Disk+Data.swift */,
-				27B69EC625A754A60028CCAD /* Disk+Errors.swift */,
-				27B69EC825A754A60028CCAD /* Disk+Helpers.swift */,
-				27B69ECE25A754A60028CCAD /* Disk+InternalHelpers.swift */,
-				27B69ECA25A754A60028CCAD /* Disk+UIImage.swift */,
-				27B69ECB25A754A60028CCAD /* Disk+VolumeInformation.swift */,
-			);
-			path = "Disk-0.6.4";
 			sourceTree = "<group>";
 		};
 		27B69EDF25A755200028CCAD /* Primitives */ = {
@@ -491,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B69ED625A754A60028CCAD /* Disk.swift in Sources */,
 				27A2D46B25AB3D7800DEF483 /* NibOwnerLoadable.swift in Sources */,
 				27B69EEB25A7553C0028CCAD /* Pair.swift in Sources */,
 				27B69F1B25A758F20028CCAD /* Once.swift in Sources */,
@@ -501,19 +438,13 @@
 				2755B17B25A760D600DE5CBB /* UINavigationBar+Extensions.swift in Sources */,
 				27A2D46925AB3D7800DEF483 /* UITableView+Reusable.swift in Sources */,
 				2755B18325A7623000DE5CBB /* UIColor+Extensions.swift in Sources */,
-				27B69ED825A754A60028CCAD /* Disk+InternalHelpers.swift in Sources */,
 				27B69F1C25A758F20028CCAD /* Boxes.swift in Sources */,
-				27B69ECF25A754A60028CCAD /* Disk+[UIImage].swift in Sources */,
-				27B69ED025A754A60028CCAD /* Disk+Errors.swift in Sources */,
 				272E741225AA1A2400934F4F /* RingBuffer.swift in Sources */,
 				27A2D46C25AB3D7800DEF483 /* StoryboardSceneBased.swift in Sources */,
 				27A2D46825AB3D7800DEF483 /* Reusable.swift in Sources */,
 				27B69EEA25A7553C0028CCAD /* ValidatedResult.swift in Sources */,
 				27B69EE725A7553C0028CCAD /* ActivityState.swift in Sources */,
 				27B69F2425A75BD30028CCAD /* UIResponder+Extensions.swift in Sources */,
-				27B69ED425A754A60028CCAD /* Disk+UIImage.swift in Sources */,
-				27B69ED725A754A60028CCAD /* Disk+Codable.swift in Sources */,
-				27B69ED225A754A60028CCAD /* Disk+Helpers.swift in Sources */,
 				27A2D47325AB3F8300DEF483 /* TimeZone+Extensions.swift in Sources */,
 				27B69F2025A75AD60028CCAD /* UIView+Extensions.swift in Sources */,
 				27A2D45625AB3A9E00DEF483 /* NonEmpty.swift in Sources */,
@@ -522,12 +453,9 @@
 				27B69F0825A757190028CCAD /* Collection+Safe.swift in Sources */,
 				27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */,
 				27B69F0D25A7576B0028CCAD /* PairedByStrideIterator.swift in Sources */,
-				27B69ED125A754A60028CCAD /* Disk+Data.swift in Sources */,
 				27B69EE825A7553C0028CCAD /* Either.swift in Sources */,
 				27B69F0625A757190028CCAD /* Optional+Present.swift in Sources */,
-				27B69ED325A754A60028CCAD /* Disk+[Data].swift in Sources */,
 				2755B17F25A7610700DE5CBB /* UIViewController+Extensions.swift in Sources */,
-				27B69ED525A754A60028CCAD /* Disk+VolumeInformation.swift in Sources */,
 				27A2D46725AB3D7800DEF483 /* UICollectionView+Reusable.swift in Sources */,
 				27B69EE625A7553C0028CCAD /* Result.swift in Sources */,
 				27B69EE925A7553C0028CCAD /* Change.swift in Sources */,
@@ -692,7 +620,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Elements/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -718,7 +646,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Elements/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -739,7 +667,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tests/ElementsTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -757,7 +685,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tests/ElementsTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
