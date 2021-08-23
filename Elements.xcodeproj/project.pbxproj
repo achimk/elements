@@ -23,6 +23,17 @@
 		27A2D46D25AB3D7800DEF483 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D46625AB3D7800DEF483 /* StoryboardBased.swift */; };
 		27A2D47325AB3F8300DEF483 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */; };
 		27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */; };
+		27B214A926D049F7001A65C6 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B214A826D049F7001A65C6 /* Support.swift */; };
+		27B2454726D050BF00287A4E /* ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2454326D050BC00287A4E /* ObservableTests.swift */; };
+		27B2454D26D3EB0E00287A4E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2454C26D3EB0E00287A4E /* Observable.swift */; };
+		27B2455126D3EB4B00287A4E /* ObservableToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2455026D3EB4B00287A4E /* ObservableToken.swift */; };
+		27B2455526D3EB7A00287A4E /* ObservableBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2455426D3EB7A00287A4E /* ObservableBag.swift */; };
+		27B2455926D3EBCC00287A4E /* MutableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2455826D3EBCC00287A4E /* MutableObservable.swift */; };
+		27B2455D26D3EC1A00287A4E /* ObservableNotifyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2455C26D3EC1A00287A4E /* ObservableNotifyStrategy.swift */; };
+		27B2456226D3EFF600287A4E /* ClosureObservableNotifyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2456126D3EFF600287A4E /* ClosureObservableNotifyStrategy.swift */; };
+		27B2456D26D3F37F00287A4E /* MutableObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2456926D3F37800287A4E /* MutableObservableTests.swift */; };
+		27B2457626D3F3FE00287A4E /* ObservableTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2457226D3F3FA00287A4E /* ObservableTokenTests.swift */; };
+		27B2458126D3F4C000287A4E /* ObservableBagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2457D26D3F4BB00287A4E /* ObservableBagTests.swift */; };
 		27B69EAF25A7520E0028CCAD /* Elements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B69EA525A7520E0028CCAD /* Elements.framework */; };
 		27B69EB625A7520E0028CCAD /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B69EA825A7520E0028CCAD /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27B69EE625A7553C0028CCAD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69EE025A7553C0028CCAD /* Result.swift */; };
@@ -77,6 +88,17 @@
 		27A2D46625AB3D7800DEF483 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
 		27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
 		27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
+		27B214A826D049F7001A65C6 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		27B2454326D050BC00287A4E /* ObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTests.swift; sourceTree = "<group>"; };
+		27B2454C26D3EB0E00287A4E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		27B2455026D3EB4B00287A4E /* ObservableToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableToken.swift; sourceTree = "<group>"; };
+		27B2455426D3EB7A00287A4E /* ObservableBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableBag.swift; sourceTree = "<group>"; };
+		27B2455826D3EBCC00287A4E /* MutableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableObservable.swift; sourceTree = "<group>"; };
+		27B2455C26D3EC1A00287A4E /* ObservableNotifyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableNotifyStrategy.swift; sourceTree = "<group>"; };
+		27B2456126D3EFF600287A4E /* ClosureObservableNotifyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureObservableNotifyStrategy.swift; sourceTree = "<group>"; };
+		27B2456926D3F37800287A4E /* MutableObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableObservableTests.swift; sourceTree = "<group>"; };
+		27B2457226D3F3FA00287A4E /* ObservableTokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTokenTests.swift; sourceTree = "<group>"; };
+		27B2457D26D3F4BB00287A4E /* ObservableBagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableBagTests.swift; sourceTree = "<group>"; };
 		27B69EA525A7520E0028CCAD /* Elements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B69EA825A7520E0028CCAD /* Elements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
 		27B69EA925A7520E0028CCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,6 +228,38 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		27B214A326D04863001A65C6 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				27B2456026D3EFE300287A4E /* NotifyStrategy */,
+				27B2454C26D3EB0E00287A4E /* Observable.swift */,
+				27B2455826D3EBCC00287A4E /* MutableObservable.swift */,
+				27B2455026D3EB4B00287A4E /* ObservableToken.swift */,
+				27B2455426D3EB7A00287A4E /* ObservableBag.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
+		27B2454226D050A000287A4E /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				27B2454326D050BC00287A4E /* ObservableTests.swift */,
+				27B2456926D3F37800287A4E /* MutableObservableTests.swift */,
+				27B2457226D3F3FA00287A4E /* ObservableTokenTests.swift */,
+				27B2457D26D3F4BB00287A4E /* ObservableBagTests.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
+		27B2456026D3EFE300287A4E /* NotifyStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				27B2455C26D3EC1A00287A4E /* ObservableNotifyStrategy.swift */,
+				27B2456126D3EFF600287A4E /* ClosureObservableNotifyStrategy.swift */,
+			);
+			path = NotifyStrategy;
+			sourceTree = "<group>";
+		};
 		27B69E9B25A7520E0028CCAD = {
 			isa = PBXGroup;
 			children = (
@@ -239,8 +293,10 @@
 				272E741025AA1A0700934F4F /* Collections */,
 				27B69F0225A757020028CCAD /* Extensions */,
 				27B69F0B25A757530028CCAD /* Iterators */,
+				27B214A326D04863001A65C6 /* Observation */,
 				27B69F1825A758DC0028CCAD /* Others */,
 				27B69EDF25A755200028CCAD /* Primitives */,
+				27B214A826D049F7001A65C6 /* Support.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -263,6 +319,7 @@
 			children = (
 				272E741725AB303D00934F4F /* Collections */,
 				27B69F1025A757A00028CCAD /* Iterators */,
+				27B2454226D050A000287A4E /* Observation */,
 				27B69EEF25A755630028CCAD /* Primitives */,
 			);
 			path = Core;
@@ -431,13 +488,17 @@
 			files = (
 				27A2D46B25AB3D7800DEF483 /* NibOwnerLoadable.swift in Sources */,
 				27B69EEB25A7553C0028CCAD /* Pair.swift in Sources */,
+				27B2455126D3EB4B00287A4E /* ObservableToken.swift in Sources */,
 				27B69F1B25A758F20028CCAD /* Once.swift in Sources */,
 				27B69F3025A75D180028CCAD /* Date+Extensions.swift in Sources */,
 				27B69F0725A757190028CCAD /* Optional+Unwrap.swift in Sources */,
+				27B214A926D049F7001A65C6 /* Support.swift in Sources */,
 				27A2D46D25AB3D7800DEF483 /* StoryboardBased.swift in Sources */,
+				27B2455526D3EB7A00287A4E /* ObservableBag.swift in Sources */,
 				2755B17B25A760D600DE5CBB /* UINavigationBar+Extensions.swift in Sources */,
 				27A2D46925AB3D7800DEF483 /* UITableView+Reusable.swift in Sources */,
 				2755B18325A7623000DE5CBB /* UIColor+Extensions.swift in Sources */,
+				27B2455926D3EBCC00287A4E /* MutableObservable.swift in Sources */,
 				27B69F1C25A758F20028CCAD /* Boxes.swift in Sources */,
 				272E741225AA1A2400934F4F /* RingBuffer.swift in Sources */,
 				27A2D46C25AB3D7800DEF483 /* StoryboardSceneBased.swift in Sources */,
@@ -445,11 +506,14 @@
 				27B69EEA25A7553C0028CCAD /* ValidatedResult.swift in Sources */,
 				27B69EE725A7553C0028CCAD /* ActivityState.swift in Sources */,
 				27B69F2425A75BD30028CCAD /* UIResponder+Extensions.swift in Sources */,
+				27B2455D26D3EC1A00287A4E /* ObservableNotifyStrategy.swift in Sources */,
 				27A2D47325AB3F8300DEF483 /* TimeZone+Extensions.swift in Sources */,
 				27B69F2025A75AD60028CCAD /* UIView+Extensions.swift in Sources */,
 				27A2D45625AB3A9E00DEF483 /* NonEmpty.swift in Sources */,
 				27B69F2C25A75CFE0028CCAD /* String+Extensions.swift in Sources */,
+				27B2454D26D3EB0E00287A4E /* Observable.swift in Sources */,
 				27A2D46A25AB3D7800DEF483 /* NibLoadable.swift in Sources */,
+				27B2456226D3EFF600287A4E /* ClosureObservableNotifyStrategy.swift in Sources */,
 				27B69F0825A757190028CCAD /* Collection+Safe.swift in Sources */,
 				27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */,
 				27B69F0D25A7576B0028CCAD /* PairedByStrideIterator.swift in Sources */,
@@ -466,7 +530,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B2458126D3F4C000287A4E /* ObservableBagTests.swift in Sources */,
 				27B69EF625A755710028CCAD /* EitherTests.swift in Sources */,
+				27B2456D26D3F37F00287A4E /* MutableObservableTests.swift in Sources */,
 				27B69EFA25A755710028CCAD /* ValidatedResultTests.swift in Sources */,
 				27B69EF825A755710028CCAD /* ChangeTests.swift in Sources */,
 				27B69EF725A755710028CCAD /* ActivityStateTests.swift in Sources */,
@@ -474,6 +540,8 @@
 				272E741925AB305200934F4F /* RingBufferTests.swift in Sources */,
 				27B69F1225A757B30028CCAD /* PairedByStrideIteratorTests.swift in Sources */,
 				27A2D45A25AB3B9100DEF483 /* NonEmptyTests.swift in Sources */,
+				27B2454726D050BF00287A4E /* ObservableTests.swift in Sources */,
+				27B2457626D3F3FE00287A4E /* ObservableTokenTests.swift in Sources */,
 				27B69EFB25A755710028CCAD /* ResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
