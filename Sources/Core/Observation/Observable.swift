@@ -1,3 +1,4 @@
+import Foundation
 
 open class Observable<State> {
     private var observations: [UUID: (State) -> ()] = [:]
