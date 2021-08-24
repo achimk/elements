@@ -1,7 +1,7 @@
 
-open class MutableObservable<T>: Observable<T> {
+open class MutableObservable<Value>: Observable<Value> {
 
-    open override func sink(_ state: T) {
-        super.sink(state)
+    open override func accept(_ state: Value) {
+        super.accept(state)
     }
 }

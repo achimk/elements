@@ -1,40 +1,40 @@
 import Foundation
 
-open class Observable<State> {
-    private var observations: [UUID: (State) -> ()] = [:]
-    private let notifyStrategy: ObservableNotifyStrategy<State>
-    public private(set) var state: State {
-        didSet { notifyTransition(oldValue, to: state) }
+open class Observable<Value> {
+    private var observations: [UUID: (Value) -> ()] = [:]
+    private let notifyStrategy: ObservableNotifyStrategy<Value>
+    public private(set) var value: Value {
+        didSet { notifyTransition(oldValue, to: value) }
     }
 
-    public convenience init(initialState: State) {
-        self.init(initialState: initialState, notifyStrategy: .always())
+    public convenience init(_ initialValue: Value) {
+        self.init(initialValue: initialValue, notifyStrategy: .always())
     }
 
-    public convenience init(initialState: State) where State: Equatable {
-        self.init(initialState: initialState, notifyStrategy: .whenNotEqual())
+    public convenience init(_ initialValue: Value) where Value: Equatable {
+        self.init(initialValue: initialValue, notifyStrategy: .whenNotEqual())
     }
 
-    public init(initialState: State, notifyStrategy: ObservableNotifyStrategy<State>) {
-        self.state = initialState
+    public init(initialValue: Value, notifyStrategy: ObservableNotifyStrategy<Value>) {
+        self.value = initialValue
         self.notifyStrategy = notifyStrategy
     }
 
     @discardableResult
-    public func observe(using closure: @escaping (State) -> ()) -> ObservableToken {
+    public func observe(using closure: @escaping (Value) -> ()) -> ObservableToken {
         let id = observations.insert(closure)
         return ObservableToken { [weak self] in
             self?.observations.removeValue(forKey: id)
         }
     }
 
-    internal func sink(_ state: State) {
-        self.state = state
+    internal func accept(_ value: Value) {
+        self.value = value
     }
 
-    private func notifyTransition(_ oldState: State, to newState: State) {
-        if notifyStrategy.shouldNotifyChange(from: oldState, to: newState) {
-            observations.values.forEach { $0(newState) }
+    private func notifyTransition(_ oldValue: Value, to newValue: Value) {
+        if notifyStrategy.shouldNotifyChange(from: oldValue, to: newValue) {
+            observations.values.forEach { $0(newValue) }
         }
     }
 }
