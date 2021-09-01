@@ -1,31 +1,44 @@
 import Foundation
 
 open class Observable<Value> {
-    private var observations: [UUID: (Value) -> ()] = [:]
     private let notifyStrategy: ObservableNotifyStrategy<Value>
+    private let observationContaner: ObservationContainer<Value>
     public private(set) var value: Value {
         didSet { notifyTransition(oldValue, to: value) }
     }
 
-    public convenience init(_ initialValue: Value) {
-        self.init(initialValue: initialValue, notifyStrategy: .always())
+    public convenience init(
+        _ initialValue: Value,
+        observationContainer: ObservationContainer<Value> = .set())
+    {
+        self.init(
+            initialValue: initialValue,
+            notifyStrategy: .always(),
+            observationContainer: observationContainer)
     }
 
-    public convenience init(_ initialValue: Value) where Value: Equatable {
-        self.init(initialValue: initialValue, notifyStrategy: .whenNotEqual())
+    public convenience init(
+        _ initialValue: Value,
+        observationContainer: ObservationContainer<Value> = .set()) where Value: Equatable
+    {
+        self.init(
+            initialValue: initialValue,
+            notifyStrategy: .whenNotEqual(),
+            observationContainer: observationContainer)
     }
 
-    public init(initialValue: Value, notifyStrategy: ObservableNotifyStrategy<Value>) {
+    public init(initialValue: Value,
+                notifyStrategy: ObservableNotifyStrategy<Value>,
+                observationContainer: ObservationContainer<Value>)
+    {
         self.value = initialValue
         self.notifyStrategy = notifyStrategy
+        self.observationContaner = observationContainer
     }
 
     @discardableResult
     public func observe(using closure: @escaping (Value) -> ()) -> ObservableToken {
-        let id = observations.insert(closure)
-        return ObservableToken { [weak self] in
-            self?.observations.removeValue(forKey: id)
-        }
+        observationContaner.insert(closure)
     }
 
     internal func accept(_ value: Value) {
@@ -34,15 +47,9 @@ open class Observable<Value> {
 
     private func notifyTransition(_ oldValue: Value, to newValue: Value) {
         if notifyStrategy.shouldNotifyChange(from: oldValue, to: newValue) {
-            observations.values.forEach { $0(newValue) }
+            observationContaner.forEach { (closure) in
+                closure(newValue)
+            }
         }
-    }
-}
-
-extension Dictionary where Key == UUID {
-    fileprivate mutating func insert(_ value: Value) -> UUID {
-        let id = UUID()
-        self[id] = value
-        return id
     }
 }

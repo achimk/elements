@@ -23,6 +23,11 @@
 		27A2D46D25AB3D7800DEF483 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D46625AB3D7800DEF483 /* StoryboardBased.swift */; };
 		27A2D47325AB3F8300DEF483 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */; };
 		27A2D47725AB3FC100DEF483 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */; };
+		27B1194F26DFDE48004B3687 /* ListObservationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1194E26DFDE48004B3687 /* ListObservationContainer.swift */; };
+		27B1195526DFDE54004B3687 /* DictionaryObservationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1195426DFDE54004B3687 /* DictionaryObservationContainer.swift */; };
+		27B1195A26DFDE7C004B3687 /* ObservationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1194626DFD542004B3687 /* ObservationContainer.swift */; };
+		27B1196426DFDFF1004B3687 /* DictionaryObservationContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1195E26DFDFE1004B3687 /* DictionaryObservationContainerTests.swift */; };
+		27B1196D26DFE118004B3687 /* ListObservationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1196926DFE113004B3687 /* ListObservationContainer.swift */; };
 		27B214A926D049F7001A65C6 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B214A826D049F7001A65C6 /* Support.swift */; };
 		27B2454726D050BF00287A4E /* ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2454326D050BC00287A4E /* ObservableTests.swift */; };
 		27B2454D26D3EB0E00287A4E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2454C26D3EB0E00287A4E /* Observable.swift */; };
@@ -88,6 +93,11 @@
 		27A2D46625AB3D7800DEF483 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
 		27A2D47225AB3F8300DEF483 /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
 		27A2D47625AB3FC100DEF483 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
+		27B1194626DFD542004B3687 /* ObservationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationContainer.swift; sourceTree = "<group>"; };
+		27B1194E26DFDE48004B3687 /* ListObservationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListObservationContainer.swift; sourceTree = "<group>"; };
+		27B1195426DFDE54004B3687 /* DictionaryObservationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryObservationContainer.swift; sourceTree = "<group>"; };
+		27B1195E26DFDFE1004B3687 /* DictionaryObservationContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryObservationContainerTests.swift; sourceTree = "<group>"; };
+		27B1196926DFE113004B3687 /* ListObservationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListObservationContainer.swift; sourceTree = "<group>"; };
 		27B214A826D049F7001A65C6 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		27B2454326D050BC00287A4E /* ObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTests.swift; sourceTree = "<group>"; };
 		27B2454C26D3EB0E00287A4E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -228,10 +238,30 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		27B1194326DFD4F7004B3687 /* ObservationContainer */ = {
+			isa = PBXGroup;
+			children = (
+				27B1194626DFD542004B3687 /* ObservationContainer.swift */,
+				27B1194E26DFDE48004B3687 /* ListObservationContainer.swift */,
+				27B1195426DFDE54004B3687 /* DictionaryObservationContainer.swift */,
+			);
+			path = ObservationContainer;
+			sourceTree = "<group>";
+		};
+		27B1195D26DFDFCD004B3687 /* ObservationContainer */ = {
+			isa = PBXGroup;
+			children = (
+				27B1196926DFE113004B3687 /* ListObservationContainer.swift */,
+				27B1195E26DFDFE1004B3687 /* DictionaryObservationContainerTests.swift */,
+			);
+			path = ObservationContainer;
+			sourceTree = "<group>";
+		};
 		27B214A326D04863001A65C6 /* Observation */ = {
 			isa = PBXGroup;
 			children = (
-				27B2456026D3EFE300287A4E /* NotifyStrategy */,
+				27B1194326DFD4F7004B3687 /* ObservationContainer */,
+				27B2456026D3EFE300287A4E /* StateNotifyStrategy */,
 				27B2454C26D3EB0E00287A4E /* Observable.swift */,
 				27B2455826D3EBCC00287A4E /* MutableObservable.swift */,
 				27B2455026D3EB4B00287A4E /* ObservableToken.swift */,
@@ -243,6 +273,7 @@
 		27B2454226D050A000287A4E /* Observation */ = {
 			isa = PBXGroup;
 			children = (
+				27B1195D26DFDFCD004B3687 /* ObservationContainer */,
 				27B2454326D050BC00287A4E /* ObservableTests.swift */,
 				27B2456926D3F37800287A4E /* MutableObservableTests.swift */,
 				27B2457226D3F3FA00287A4E /* ObservableTokenTests.swift */,
@@ -251,13 +282,13 @@
 			path = Observation;
 			sourceTree = "<group>";
 		};
-		27B2456026D3EFE300287A4E /* NotifyStrategy */ = {
+		27B2456026D3EFE300287A4E /* StateNotifyStrategy */ = {
 			isa = PBXGroup;
 			children = (
 				27B2455C26D3EC1A00287A4E /* ObservableNotifyStrategy.swift */,
 				27B2456126D3EFF600287A4E /* ClosureObservableNotifyStrategy.swift */,
 			);
-			path = NotifyStrategy;
+			path = StateNotifyStrategy;
 			sourceTree = "<group>";
 		};
 		27B69E9B25A7520E0028CCAD = {
@@ -490,8 +521,10 @@
 				27B69EEB25A7553C0028CCAD /* Pair.swift in Sources */,
 				27B2455126D3EB4B00287A4E /* ObservableToken.swift in Sources */,
 				27B69F1B25A758F20028CCAD /* Once.swift in Sources */,
+				27B1195526DFDE54004B3687 /* DictionaryObservationContainer.swift in Sources */,
 				27B69F3025A75D180028CCAD /* Date+Extensions.swift in Sources */,
 				27B69F0725A757190028CCAD /* Optional+Unwrap.swift in Sources */,
+				27B1194F26DFDE48004B3687 /* ListObservationContainer.swift in Sources */,
 				27B214A926D049F7001A65C6 /* Support.swift in Sources */,
 				27A2D46D25AB3D7800DEF483 /* StoryboardBased.swift in Sources */,
 				27B2455526D3EB7A00287A4E /* ObservableBag.swift in Sources */,
@@ -504,6 +537,7 @@
 				27A2D46C25AB3D7800DEF483 /* StoryboardSceneBased.swift in Sources */,
 				27A2D46825AB3D7800DEF483 /* Reusable.swift in Sources */,
 				27B69EEA25A7553C0028CCAD /* ValidatedResult.swift in Sources */,
+				27B1195A26DFDE7C004B3687 /* ObservationContainer.swift in Sources */,
 				27B69EE725A7553C0028CCAD /* ActivityState.swift in Sources */,
 				27B69F2425A75BD30028CCAD /* UIResponder+Extensions.swift in Sources */,
 				27B2455D26D3EC1A00287A4E /* ObservableNotifyStrategy.swift in Sources */,
@@ -542,6 +576,8 @@
 				27A2D45A25AB3B9100DEF483 /* NonEmptyTests.swift in Sources */,
 				27B2454726D050BF00287A4E /* ObservableTests.swift in Sources */,
 				27B2457626D3F3FE00287A4E /* ObservableTokenTests.swift in Sources */,
+				27B1196D26DFE118004B3687 /* ListObservationContainer.swift in Sources */,
+				27B1196426DFDFF1004B3687 /* DictionaryObservationContainerTests.swift in Sources */,
 				27B69EFB25A755710028CCAD /* ResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
