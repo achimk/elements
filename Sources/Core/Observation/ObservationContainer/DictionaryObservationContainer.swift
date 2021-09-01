@@ -1,3 +1,4 @@
+import Foundation
 
 public final class DictionaryObservationContainer<Value>: ObservationContainer<Value> {
     private var observations: [UUID: (Value) -> ()] = [:]

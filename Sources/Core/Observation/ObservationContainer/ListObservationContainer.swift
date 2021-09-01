@@ -1,3 +1,4 @@
+import Foundation
 
 public final class ListObservationContainer<Value>: ObservationContainer<Value> {
     private var observations: [(uuid: UUID, closure: (Value) -> ())] = []
