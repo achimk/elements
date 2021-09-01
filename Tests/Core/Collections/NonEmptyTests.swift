@@ -3,15 +3,21 @@ import Elements
 
 final class NonEmptyTests: XCTestCase {
     
-    func test_whenInitializeWithEmptyCollection_shouldReturnNil() {
+    func test_whenInitializedWithEmptyCollection_shouldReturnNil() {
         let empty: [Int] = []
-        let result = NonEmpty(rawValue: empty)
+        let result = NonEmpty(empty)
         XCTAssertEqual(result.isPresent, false)
     }
     
-    func test_whenInitializeWithNonEmptyCollection_shouldReturnNonEmpty() {
+    func test_whenInitializedWithNonEmptyCollection_shouldReturnNonEmpty() {
         let nonEmpty: [Int] = [1]
-        let result = NonEmpty(rawValue: nonEmpty)
+        let result = NonEmpty(nonEmpty)
         XCTAssertEqual(result.isPresent, true)
+    }
+
+    func test_whenInitializedWithNonEmptyCollection_shouldReturnFirstElement() {
+        let nonEmpty: [Int] = [1, 2, 3]
+        let result = NonEmpty(nonEmpty)
+        XCTAssertEqual(result?.head, 1)
     }
 }
